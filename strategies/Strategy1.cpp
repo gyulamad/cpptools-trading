@@ -13,15 +13,16 @@ public:
         const int TBUY = 10;
         const int TSELL = 20;
         const int TREPEAT = 30;
-        const float BUYPC = 1;
+        const float BUYPC = 20;
         const float SELLPC = 2;
         float price = candle.getClose();        
         i++;
         if (i == TBUY) {
             buyPrice = price;
-            if (!exchange->buy(exchange->getBalanceFree() / BUYPC)) {
-                LOG("BUY error");
-            }
+            // if (exchange->getBalanceFreePc() > 0.05)
+                if (!exchange->buy(exchange->getBalanceFree() / BUYPC)) {
+                    LOG("BUY error");
+                }
         }
         if (i == TSELL) {
             // if (price < buyPrice)
