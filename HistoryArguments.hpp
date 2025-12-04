@@ -5,14 +5,21 @@
 #include "CandleHistory.hpp"
 
 #define HISTORIES_DIR __DIR__ + "/histories/"
-#define HISTORY_LIB_EXT ".so"
+#define LIB_EXT ".so"
 
 class HistoryArguments: public Arguments {
 public:
-    HistoryArguments(int argc, char* argv[], DynLoader& loader): 
+    HistoryArguments(
+        int argc, char* argv[],
+        DynLoader& loader
+    ): 
         Arguments(argc, argv), loader(loader)
     {
-        historyLib = HISTORIES_DIR + get<string>("history") + HISTORY_LIB_EXT;
+        addHelp({"history", "h"}, "History");
+        addHelp({"symbol", "s"}, "Symbol");
+        addHelp({"interval", "i"}, "Interval");
+
+        historyLib = HISTORIES_DIR + get<string>("history") + LIB_EXT;
         history = loader.load<CandleHistory>(historyLib);
 
         symbol = get<string>("symbol");

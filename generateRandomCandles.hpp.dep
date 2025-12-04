@@ -1,9 +1,0 @@
-/mnt/windows/cpp/cpptools/trading/Candle.hpp
-/mnt/windows/cpp/cpptools/misc/datetime_defs.hpp
-/mnt/windows/cpp/cpptools/misc/sec_to_datetime.hpp
-/mnt/windows/cpp/cpptools/misc/ms_to_datetime.hpp
-/mnt/windows/cpp/cpptools/misc/get_time_ms.hpp
-/mnt/windows/cpp/cpptools/misc/default_get_time_ms.hpp
-<=== [ INCS | IMPS ] ===>
-
-<=== [ IMPS | DEPS ] ===>
