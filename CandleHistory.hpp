@@ -3,13 +3,13 @@
 #include <string>
 #include <vector>
 
-#include "../../cpptools/misc/file_exists.hpp"
-#include "../../cpptools/misc/mkdir.hpp"
-#include "../../cpptools/misc/vector_load.hpp"
-#include "../../cpptools/misc/vector_save.hpp"
-#include "../../cpptools/misc/get_absolute_path.hpp"
-#include "../../cpptools/math/linear_interpolation_search.hpp"
-#include "../../cpptools/misc/array_slice.hpp"
+#include "../misc/file_exists.hpp"
+#include "../misc/mkdir.hpp"
+#include "../misc/vector_load.hpp"
+#include "../misc/vector_save.hpp"
+#include "../misc/get_absolute_path.hpp"
+#include "../math/linear_interpolation_search.hpp"
+#include "../misc/array_slice.hpp"
 #include "Candle.hpp"
 
 using namespace std;
@@ -102,7 +102,7 @@ public:
 
 #ifdef TEST
 
-#include "../../cpptools/misc/str_contains.hpp"
+#include "../misc/str_contains.hpp"
 
 // Mock implementation for testing
 class MockCandleHistory : public CandleHistory {

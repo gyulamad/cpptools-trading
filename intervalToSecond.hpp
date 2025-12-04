@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../cpptools/misc/datetime_defs.hpp"
-#include "../../cpptools/misc/ERROR.hpp"
+#include "../misc/datetime_defs.hpp"
+#include "../misc/ERROR.hpp"
 
 #include <string>
 #include <map>

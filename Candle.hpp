@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../cpptools/misc/datetime_defs.hpp"
-#include "../../cpptools/misc/sec_to_datetime.hpp"
+#include "../misc/datetime_defs.hpp"
+#include "../misc/sec_to_datetime.hpp"
 
 #include <iostream>
 

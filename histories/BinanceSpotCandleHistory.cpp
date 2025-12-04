@@ -7,24 +7,24 @@
 #include <string>                             // for operator+, allocator
 #include <utility>                            // for pair
 #include <vector>                             // for vector
-#include "../../../cpptools/misc/Curl.hpp"               // for Curl
-#include "../../../cpptools/misc/ERROR.hpp"              // for ERROR
-#include "../../../cpptools/misc/EXTERN.hpp"             // for EXTERN_DEFAULT
-#include "../../../cpptools/misc/Logger.hpp"     // for createLogger
-#include "../../../cpptools/misc/safe.hpp"       // for safe
-#include "../../../cpptools/misc/datetime_to_sec.hpp"    // for datetime_to_sec
-#include "../../../cpptools/misc/execute.hpp"            // for execute
-#include "../../../cpptools/misc/explode.hpp"            // for explode
-#include "../../../cpptools/misc/file_exists.hpp"        // for file_exists
-#include "../../../cpptools/misc/file_get_contents.hpp"  // for file_get_contents
-#include "../../../cpptools/misc/file_put_contents.hpp"  // for file_put_contents
-#include "../../../cpptools/misc/mkdir.hpp"              // for mkdir
-#include "../../../cpptools/misc/remove.hpp"             // for remove
-#include "../../../cpptools/misc/replace_extension.hpp"  // for replace_extension
-#include "../../../cpptools/misc/str_contains.hpp"       // for str_contains
-#include "../../../cpptools/misc/str_replace.hpp"        // for str_replace
-#include "../../../cpptools/misc/trim.hpp"               // for trim
-#include "../../../cpptools/misc/ConsoleLogger.hpp"
+#include "../../misc/Curl.hpp"               // for Curl
+#include "../../misc/ERROR.hpp"              // for ERROR
+#include "../../misc/EXTERN.hpp"             // for EXTERN_DEFAULT
+#include "../../misc/Logger.hpp"     // for createLogger
+#include "../../misc/safe.hpp"       // for safe
+#include "../../misc/datetime_to_sec.hpp"    // for datetime_to_sec
+#include "../../misc/execute.hpp"            // for execute
+#include "../../misc/explode.hpp"            // for explode
+#include "../../misc/file_exists.hpp"        // for file_exists
+#include "../../misc/file_get_contents.hpp"  // for file_get_contents
+#include "../../misc/file_put_contents.hpp"  // for file_put_contents
+#include "../../misc/mkdir.hpp"              // for mkdir
+#include "../../misc/remove.hpp"             // for remove
+#include "../../misc/replace_extension.hpp"  // for replace_extension
+#include "../../misc/str_contains.hpp"       // for str_contains
+#include "../../misc/str_replace.hpp"        // for str_replace
+#include "../../misc/trim.hpp"               // for trim
+#include "../../misc/ConsoleLogger.hpp"
 #include "../Candle.hpp"                      // for Candle
 #include "../CandleHistory.hpp"               // for CandleHistory
 
