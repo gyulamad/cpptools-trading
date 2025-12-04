@@ -76,6 +76,15 @@ public:
 
     virtual void setTime(uint32_t time) { this->time = time; }
     virtual void setPrice(float price) { this->price = price; }
+    
+    void setBalance(float balance) { this->balance = balance; }
+    void setAsset(float asset) { this->asset = asset; }
+    float getBalance() const { return balance; }
+    float getAsset() const { return asset; }
+    void setFeeMakerBuyPc(float feeMakerBuyPc) { this->feeMakerBuyPc = feeMakerBuyPc; }
+    void setFeeMakerSellPc(float feeMakerSellPc) { this->feeMakerSellPc = feeMakerSellPc; }
+    void setFeeTakerBuyPc(float feeTakerBuyPc) { this->feeTakerBuyPc = feeTakerBuyPc; }
+    void setFeeTakerSellPc(float feeTakerSellPc) { this->feeTakerSellPc = feeTakerSellPc; }
 
     // Updated processLimitOrders method with maker fees
     void processLimitOrders(const Candle& candle) {

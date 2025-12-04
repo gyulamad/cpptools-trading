@@ -142,6 +142,16 @@ public:
     virtual size_t getPendingOrderCount() const = 0;
     virtual void cancelAllOrders() = 0;
     
+
+    void dump() {
+        AccountData account = getAccountData();
+        cout << 
+            "ASSET total:" << account.assetTotal << "\t"
+            "used:" << account.assetUsed << "\t"
+            "BALANCE total:" << account.balanceTotal << "\t"
+            "used:" << account.balanceUsed << endl;
+    }
+
 protected:
     bool logsOnError = true;
     bool showsOnError = true;
