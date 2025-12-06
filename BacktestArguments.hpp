@@ -10,8 +10,8 @@
 #include "../misc/explode.hpp"
 #include "../math/Calculation.hpp"
 
-#define STRATEGIES_DIR __DIR__ + "/strategies/"
-#define EXCHANGES_DIR __DIR__ + "/exchanges/"
+const string STRATEGIES_DIR = fix_path(__DIR__ + "/strategies") + "/";
+const string EXCHANGES_DIR = fix_path(__DIR__ + "/exchanges") + "/";
 
 class BacktestArguments: public HistoryArguments {
 public:

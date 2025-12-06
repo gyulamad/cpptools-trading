@@ -4,8 +4,9 @@
 #include "../misc/DynLoader.hpp"
 #include "CandleHistory.hpp"
 
-#define HISTORIES_DIR __DIR__ + "/histories/"
-#define LIB_EXT ".so"
+const string HISTORIES_DIR = fix_path(__DIR__ + "/histories") + "/";
+const string LIB_EXT = ".so";
+const string INI_EXT = ".ini";
 
 class HistoryArguments: public Arguments {
 public:
